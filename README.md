@@ -24,8 +24,11 @@ python merge.py (python3 environment)
 
 # Step 3: Prediction
 Prepare a feature file for prediction. You must ensure:
+
 The file is named ACC_PSSM.csv
+
 The columns are properly named as ACC_PSSM_F1 to ACC_PSSM_F4000
+
 It contains only the ACC-PSSM features used by the model
 Then run:
 
