@@ -7,7 +7,11 @@ conda create -n pseinone python=2.7
 conda activate pseinone
 
 # Step 1: Feature Extraction (ACC-PSSM)
-cd Pseinone
+wget http://bliulab.net/Pse-in-One2.0/static/download/Pse-in-One-2.0.zip
+
+unzip Pse-in-One-2.0.zip
+
+cd Pse-in-One-2.0
 
 python2.7 profile.py ../positiveData.fasta ACC-PSSM -lag 10 -f csv -cpu 64 -out ../feature/ACC-PSSM_pos.csv
 
