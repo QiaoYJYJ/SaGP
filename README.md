@@ -7,7 +7,9 @@ conda activate pseinone
 
 # Step 1: Feature Extraction (ACC-PSSM)
 cd Pseinone
+
 python2.7 profile.py ../positiveData.fasta ACC-PSSM -lag 10 -f csv -cpu 64 -out ../feature/ACC-PSSM_pos.csv
+
 python2.7 profile.py ../negativeData.fasta ACC-PSSM -lag 10 -f csv -cpu 64 -out ../feature/ACC-PSSM_neg.csv
 
 This will generate:
